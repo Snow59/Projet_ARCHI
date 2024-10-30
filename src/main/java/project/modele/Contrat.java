@@ -1,4 +1,4 @@
-package com.imt.hamza.Archi_project;
+package project.modele;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
