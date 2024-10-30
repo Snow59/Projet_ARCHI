@@ -2,6 +2,7 @@ package project.modele;
 
 import jakarta.persistence.*;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Client {
@@ -39,7 +40,8 @@ public class Client {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    
+    @JsonIgnore
     public List<Compte> getComptes() {
         return comptes;
     }
@@ -47,7 +49,8 @@ public class Client {
     public void setComptes(List<Compte> comptes) {
         this.comptes = comptes;
     }
-
+    
+    @JsonIgnore
     // Méthode pour retourner tous les comptes du client
     public List<Compte> getAllComptes() {
         return comptes;
