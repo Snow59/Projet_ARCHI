@@ -47,5 +47,11 @@ Pour simplifier le déploiement de l'environnement de développement, nous utili
 
 2. **Lancer le docker**
 
-   Pour déployer le docker vous pouvez utiliser la commande `docker-compose up -d` , assurez vous de l'utiliser à la racine du projet ( dans un cmd par exemple ) 
+   Pour déployer le docker vous pouvez utiliser la commande `docker-compose up -d` , assurez vous de l'utiliser à la racine du projet ( dans un cmd par exemple )
+
+---
+
+## Tester la Base de Données
+
+Pour vérifier que la connexion à la base de données est bien configurée et que les opérations de base fonctionnent correctement, nous utiliserons les fichiers `DatabaseTest` et `GetDatabase`. Ces fichiers permettent respectivement d'ajouter des données dans la table Client et de récupérer les informations présentes dans cette table.
    
