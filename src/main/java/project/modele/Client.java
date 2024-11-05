@@ -11,7 +11,14 @@ public class Client {
     private Long id;
     private String nom;
     private String email;
-
+    
+    
+	 // Relation OneToMany entre Client et Compte : 
+	 // Un client peut avoir plusieurs comptes associés. 
+	 // "mappedBy = 'client'" signifie que la relation est gérée par l'attribut "client" dans l'entité Compte.
+	 // "cascade = CascadeType.ALL" permet d'appliquer toutes les opérations effectuées sur un Client
+	 // (ajout, modification, suppression) à ses comptes associés.
+	 // Par exemple, supprimer un Client supprimera automatiquement tous ses comptes associés dans la base de données.
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
     private List<Compte> comptes;
 

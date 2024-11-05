@@ -1,7 +1,7 @@
 package project;
 
 import project.modele.Client;
-import project.controller.ClientController;
+import project.controller.ControllerLayer;
 
 import java.util.List;
 
@@ -9,12 +9,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-@Component
-public class ClientTestRunner implements CommandLineRunner {
+//@Component   // ça veut dire qu'il démarre quand le client spring boot aura demarré 
+public class TestRunner implements CommandLineRunner {
 
-    private final ClientController clientController;
+    private final ControllerLayer clientController;
 
-    public ClientTestRunner(ClientController clientController) {
+    public TestRunner(ControllerLayer clientController) {
         this.clientController = clientController;
     }
 

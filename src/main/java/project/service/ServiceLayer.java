@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ClientService {
+public class ServiceLayer {
 
     private final List<Client> clients = new ArrayList<>();
     private Long nextId = 1L;
@@ -20,15 +20,16 @@ public class ClientService {
         Optional<Client> existingClient = clients.stream()
                 .filter(c -> c.getEmail().equals(client.getEmail()))
                 .findFirst();
-
         if (existingClient.isPresent()) {
             throw new IllegalArgumentException("Un client avec cet email existe déjà !");
         }
-
-        // Assigner un ID unique et ajouter le client à la liste
-        client.setId(nextId++);
-        clients.add(client);
-        return client;
+        else {	
+	        
+	        // Assigner un ID unique et ajouter le client à la liste
+	        client.setId(nextId++);
+	        clients.add(client);
+	        return client;
+        }
     }
 
     // Méthode pour récupérer tous les clients
