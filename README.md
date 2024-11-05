@@ -43,4 +43,9 @@ Pour simplifier le déploiement de l'environnement de développement, nous utili
 
 1. **Configurer le Fichier `docker-compose.yml`**
 
-   Assurez-vous d'avoir un fichier `docker-compose.yml` à la racine du projet avec le contenu suivant :
+   Assurez-vous  de bien télécharger `docker-compose.yml` qui est à la racine du projet
+
+2. **Lancer le docker**
+
+   Pour déployer le docker vous pouvez utiliser la commande `docker compose up -d` , assurez vous de l'utiliser à la racine du projet ( dans un cmd par exemple ) 
+   
