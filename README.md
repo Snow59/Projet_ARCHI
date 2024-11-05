@@ -26,3 +26,21 @@ Schema de l'architecture de mon Application java Bancaire.
 - S'occupe de l'accès aux données en interagissant directement avec la base de données.
 - Étend `JpaRepository` ou `CrudRepository` pour bénéficier des méthodes CRUD de base sans écrire de SQL.
 - Traite uniquement les opérations de persistance (sauvegarde, recherche, suppression) et ne contient pas de logique métier.
+
+
+---
+
+## Déploiement de la Base de Données avec Docker
+
+Pour simplifier le déploiement de l'environnement de développement, nous utilisons Docker pour exécuter une instance de MariaDB, accessible à l'application Java via Docker Compose.
+
+### Prérequis
+
+- **Docker** : Assurez-vous que Docker est installé sur votre machine. Vous pouvez télécharger Docker Desktop depuis [le site officiel](https://www.docker.com/products/docker-desktop).
+- **Docker Compose** : Docker Compose est généralement inclus avec Docker Desktop.
+
+### Étapes de Déploiement avec Docker Compose
+
+1. **Configurer le Fichier `docker-compose.yml`**
+
+   Assurez-vous d'avoir un fichier `docker-compose.yml` à la racine du projet avec le contenu suivant :
