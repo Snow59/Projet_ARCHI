@@ -47,5 +47,5 @@ Pour simplifier le déploiement de l'environnement de développement, nous utili
 
 2. **Lancer le docker**
 
-   Pour déployer le docker vous pouvez utiliser la commande `docker compose up -d` , assurez vous de l'utiliser à la racine du projet ( dans un cmd par exemple ) 
+   Pour déployer le docker vous pouvez utiliser la commande `docker-compose up -d` , assurez vous de l'utiliser à la racine du projet ( dans un cmd par exemple ) 
    
